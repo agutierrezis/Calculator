@@ -1,0 +1,122 @@
+//
+// * All Rights Reserved
+// * This software is proprietary information of
+// * Intelligent Sense
+// * Use is subject to license terms.
+// * Filename: _base.scss
+//
+
+// *
+// * Author:      agutierrez@intelligentsense.com
+// * Date:        10/06/2015
+// * Description: Base partial. Put here all the code that doesnt compile to css directly. (params, mixins, etc)
+// 
+
+/*
+	Variables
+ */
+$grey-border: #CDCDCD;
+$black-border: black;
+$red-border: #A10000;
+$turquose-border: #216A7A;
+$orange-border: #E69539;
+
+$buttoms-font: 'Play', serif;
+$buttoms-font-size: 24px;
+$buttoms-height: 65px;
+$buttom-eq-height: 140px;
+
+/*
+	Mixins definition
+ */
+
+@mixin border-def($width: 1px, $stile: solid, $color: black, $radius: 15px) {
+	border: $width $stile $color;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin default-gradient-shadow () {
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+
+	-webkit-box-shadow: 4px 6px 10px 2px rgba(200,200,200,1);
+	-moz-box-shadow: 4px 6px 10px 2px rgba(200,200,200,1);
+	box-shadow: 4px 6px 10px 2px rgba(200,200,200,1);
+}
+
+@mixin display-gradient-mixin () {
+	background: rgba(171,208,188,1);
+	background: -moz-linear-gradient(top, rgba(171,208,188,1) 0%, rgba(90,128,128,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(171,208,188,1)), color-stop(100%, rgba(90,128,128,1)));
+	background: -webkit-linear-gradient(top, rgba(171,208,188,1) 0%, rgba(90,128,128,1) 100%);
+	background: -o-linear-gradient(top, rgba(171,208,188,1) 0%, rgba(90,128,128,1) 100%);
+	background: -ms-linear-gradient(top, rgba(171,208,188,1) 0%, rgba(90,128,128,1) 100%);
+	background: linear-gradient(to bottom, rgba(171,208,188,1) 0%, rgba(90,128,128,1) 100%);
+
+	-webkit-box-shadow: 4px 6px 10px 2px rgba(68,107,107,1);
+	-moz-box-shadow: 4px 6px 10px 2px rgba(68,107,107,1);
+	box-shadow: 4px 6px 10px 2px rgba(68,107,107,1);
+}
+
+@mixin black-gradient-shadow () {
+	background: rgba(67,67,67,1);
+	background: -moz-linear-gradient(top, rgba(67,67,67,1) 0%, rgba(34,34,34,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(67,67,67,1)), color-stop(100%, rgba(34,34,34,1)));
+	background: -webkit-linear-gradient(top, rgba(67,67,67,1) 0%, rgba(34,34,34,1) 100%);
+	background: -o-linear-gradient(top, rgba(67,67,67,1) 0%, rgba(34,34,34,1) 100%);
+	background: -ms-linear-gradient(top, rgba(67,67,67,1) 0%, rgba(34,34,34,1) 100%);
+	background: linear-gradient(to bottom, rgba(67,67,67,1) 0%, rgba(34,34,34,1) 100%);
+
+	-webkit-box-shadow: 4px 6px 10px 2px rgba(20,20,20,1);
+	-moz-box-shadow: 4px 6px 10px 2px rgba(20,20,20,1);
+	box-shadow: 4px 6px 10px 2px rgba(20,20,20,1);
+}
+
+@mixin red-gradient-shadow () {
+	background: rgba(245,39,39,1);
+	background: -moz-linear-gradient(top, rgba(245,39,39,1) 0%, rgba(176,0,12,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(245,39,39,1)), color-stop(100%, rgba(176,0,12,1)));
+	background: -webkit-linear-gradient(top, rgba(245,39,39,1) 0%, rgba(176,0,12,1) 100%);
+	background: -o-linear-gradient(top, rgba(245,39,39,1) 0%, rgba(176,0,12,1) 100%);
+	background: -ms-linear-gradient(top, rgba(245,39,39,1) 0%, rgba(176,0,12,1) 100%);
+	background: linear-gradient(to bottom, rgba(245,39,39,1) 0%, rgba(176,0,12,1) 100%);
+
+	-webkit-box-shadow: 4px 6px 10px 2px rgba(100,0,0,1);
+	-moz-box-shadow: 4px 6px 10px 2px rgba(100,0,0,1);
+	box-shadow: 4px 6px 10px 2px rgba(100,0,0,1);
+}
+
+@mixin turquose-gradient-shadow () {
+	background: rgba(72,193,220,1);
+	background: -moz-linear-gradient(top, rgba(72,193,220,1) 0%, rgba(19,150,179,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(72,193,220,1)), color-stop(100%, rgba(19,150,179,1)));
+	background: -webkit-linear-gradient(top, rgba(72,193,220,1) 0%, rgba(19,150,179,1) 100%);
+	background: -o-linear-gradient(top, rgba(72,193,220,1) 0%, rgba(19,150,179,1) 100%);
+	background: -ms-linear-gradient(top, rgba(72,193,220,1) 0%, rgba(19,150,179,1) 100%);
+	background: linear-gradient(to bottom, rgba(72,193,220,1) 0%, rgba(19,150,179,1) 100%);
+
+	-webkit-box-shadow: 4px 6px 10px 2px rgba(20,100,120,1);
+	-moz-box-shadow: 4px 6px 10px 2px rgba(20,100,120,1);
+	box-shadow: 4px 6px 10px 2px rgba(20,100,120,1);
+}
+
+@mixin orange-gradient-shadow () {
+	background: rgba(255,180,89,1);
+	background: -moz-linear-gradient(top, rgba(255,180,89,1) 0%, rgba(252,145,38,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,180,89,1)), color-stop(100%, rgba(252,145,38,1)));
+	background: -webkit-linear-gradient(top, rgba(255,180,89,1) 0%, rgba(252,145,38,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,180,89,1) 0%, rgba(252,145,38,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,180,89,1) 0%, rgba(252,145,38,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,180,89,1) 0%, rgba(252,145,38,1) 100%);
+
+	-webkit-box-shadow: 4px 6px 10px 2px rgba(185,115,45,1);
+	-moz-box-shadow: 4px 6px 10px 2px rgba(185,115,45,1);
+	box-shadow: 4px 6px 10px 2px rgba(185,115,45,1);
+}

@@ -1,0 +1,83 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <link href='http://fonts.googleapis.com/css?family=Orbitron|Play' rel='stylesheet' type='text/css'>
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <main>
+      <section>
+        <div class="calculator-content">
+          <div class="display-container">
+            <div id="operationContent" class="operation-content">
+            </div>
+            <div id="resultContent" class="result-content">
+            </div>
+          </div>
+          <div>
+            <div class="numbers-container">
+              <div class="btn-row">
+                <button id="btn7" class="btn number-btn input" data-value="7">7</button>
+                <button id="btn8" class="btn number-btn input" data-value="8">8</button>
+                <button id="btn9" class="btn number-btn input" data-value="9">9</button>
+              </div>
+              <div class="btn-row">
+                <button id="btn4" class="btn number-btn input" data-value="4">4</button>
+                <button id="btn5" class="btn number-btn input" data-value="5">5</button>
+                <button id="btn6" class="btn number-btn input" data-value="6">6</button>
+              </div>
+              <div class="btn-row">
+                <button id="btn1" class="btn number-btn input" data-value="1">1</button>
+                <button id="btn2" class="btn number-btn input" data-value="2">2</button>
+                <button id="btn3" class="btn number-btn input" data-value="3">3</button>
+              </div>
+              <div class="btn-row">
+                <button id="btn0" class="btn number-btn input" data-value="0">0</button>
+                <button id="btnDot" class="btn number-btn dot-btn input" data-value=".">.</button>
+                <button id="btnC" class="btn number-btn c-btn">C</button>
+              </div>
+            </div>
+            <div class="operators-container">
+              <div class="btn-row">
+                <button id="btnMult" class="btn operator-btn input" data-value="×">×</button>
+                <button id="btnDiv" class="btn operator-btn input" data-value="÷">÷</button>
+              </div>
+              <div class="btn-row">
+                <button id="btnAdd" class="btn operator-btn input" data-value="+">+</button>
+                <button id="btnEquals" class="btn equals-btn">=</button>
+              </div>
+              <div class="btn-row">
+                <button id="btnDif" class="btn operator-btn dif-btn input" data-value="-">-</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

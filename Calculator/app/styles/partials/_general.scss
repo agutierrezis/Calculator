@@ -1,0 +1,120 @@
+//
+// * All Rights Reserved
+// * This software is proprietary information of
+// * Intelligent Sense
+// * Use is subject to license terms.
+// * Filename: _general.scss
+//
+
+// *
+// * Author:      agutierrez@intelligentsense.com
+// * Date:        10/06/2015
+// * Description: General partial. Add here all the classes and font-face that
+//                are used throughout the site.
+// 
+
+
+/* ===================
+    ALL: Classes
+   =================== */
+
+.calculator-content {
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 400px;
+	padding: 3%;
+	@include border-def($color: $grey-border);
+	@include default-gradient-shadow();
+}
+
+.display-container {
+	@include border-def($width: 10px, $radius: 5px);
+	height: 60px;
+	
+	@include display-gradient-mixin();
+
+	padding: 7px 7px 14px 7px;
+	
+	text-align: right;
+	font-family: 'Orbitron', serif;
+}
+
+.operation-content {
+	height: 35%;
+	font-size: 15px;
+	overflow-x: hidden;
+}
+
+.result-content {
+	height: 65%;
+	font-size: 28px;
+	overflow-x: hidden;
+	margin-top: 10px;
+}
+
+.numbers-container {
+	width: 60%;
+	float: left;
+}
+
+.btn-row {
+	margin-top: 10px;
+	height: $buttoms-height;
+}
+
+.btn {
+	cursor: pointer;
+	height: 100%;
+	font-family: $buttoms-font;
+	font-size: $buttoms-font-size;
+}
+
+.number-btn {
+	margin-right: 14px;
+	width: 25%;
+	@include border-def($color: $grey-border, $radius: 5px);
+	@include default-gradient-shadow();
+}
+
+.dot-btn {
+	color: white;
+	@include black-gradient-shadow();
+	@include border-def($color: $black-border, $radius: 5px);
+}
+
+.c-btn {
+	color: white;
+	@include red-gradient-shadow();
+	@include border-def($color: $red-border, $radius: 5px);
+}
+
+.operators-container {
+	width: 40%;
+	float: right;
+	text-align: right;
+}
+
+.operator-btn {
+	margin-left: 14px;
+	width: 37%;
+	vertical-align: top;
+	color: white;
+	@include border-def($color: $turquose-border, $radius: 5px);
+	@include turquose-gradient-shadow();
+}
+
+.dif-btn {
+	margin-right: 47%;
+}
+
+.equals-btn {
+	margin-left: 14px;
+	width: 37%;
+	height: $buttom-eq-height;
+	color: white;
+	font-family: $buttoms-font;
+	font-size: $buttoms-font-size;
+	@include border-def($color: $orange-border, $radius: 5px);
+	@include orange-gradient-shadow();
+}

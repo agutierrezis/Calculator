@@ -1,0 +1,25 @@
+/*!
+ * All Rights Reserved
+ * This software is proprietary information of
+ * Intelligent Sense
+ * Use is subject to license terms.
+ * Filename: main.scss
+ */
+
+ /*
+  * Author:      agutierrez@intelligentsense.com
+  * Date:        08/06/2015
+  * Description: Main COMPASS file. Import all the partials you need here.
+  */
+
+// Modules and Variables
+@import "partials/base";
+
+
+// Partials
+@import "partials/general";
+// @import "partials/header";
+// @import "partials/footer";
+@import "partials/content";
+// @import "partials/media-queries";
+
